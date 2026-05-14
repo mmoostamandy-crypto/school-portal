@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>📚 Courses Page</h1>
+
+  <!-- اینجا کورس‌ها نمایش داده می‌شود -->
+  <div id="coursesContainer"></div>
+
+  <!-- اینجا جزئیات کورس -->
+  <div id="details"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<h2>➕ Add New Course</h2>
+
+<input type="text" id="cname" placeholder="Course Name">
+<input type="text" id="cinstructor" placeholder="Instructor">
+<input type="text" id="cgrade" placeholder="Grade">
+<input type="text" id="cdesc" placeholder="Description">
+
+<button onclick="addCourse()">Add Course</button>
+<h2>🔍 Filter Courses</h2>
+
+<button onclick="filterCourses('all')">All</button>
+<button onclick="filterCourses('10')">Grade 10</button>
+<button onclick="filterCourses('11')">Grade 11</button>
+<h2>🔎 Search Course</h2>
+
+<input type="text" id="searchInput" placeholder="Search course name...">
+<button onclick="searchCourse()">Search</button>
+<button onclick="filterCourses('all')">Reset</button>

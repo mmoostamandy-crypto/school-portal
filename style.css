@@ -1,9 +1,53 @@
 body {
-    background-color: #fce7ff;
-    font-family: sans-serif;
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to right, #6a0dad, #9b59b6);
+  color: white;
 }
 
-h1 {
-    color: purple;
-    text-align: center;
+/* NAVBAR */
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* INPUTS */
+input {
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
+  width: 220px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 14px;
+  background: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2e004f;
+}
+
+/* BOX */
+#summary {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }

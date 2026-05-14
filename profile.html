@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Student Profile</h1>
+
+  <!-- اطلاعات -->
+  <div class="card">
+
+    <h2>Amina</h2>
+
+    <p>Age: 16</p>
+    <p>Grade: 10</p>
+
+    <p>Status: <span id="status">Active</span></p>
+  </div>
+
+  <!-- Contact -->
+  <div class="card">
+
+    <h3>Contact Info</h3>
+
+    <p id="contact"></p>
+
+    <button onclick="showEmail()">Show Email</button>
+    <button onclick="showPhone()">Show Phone</button>
+    <button onclick="hideContact()">Hide</button>
+
+  </div>
+
+  <!-- تغییر status -->
+  <div class="card">
+
+    <h3>Update Status</h3>
+
+   <input type="text" id="statusInput" placeholder="Write new status">
+<button onclick="updateStatus()">Update Status</button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

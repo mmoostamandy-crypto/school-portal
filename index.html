@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>School Portal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello Maryam! 💜</h1>
-    <p>This is your first HTML & CSS page.</p>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>🏫 Bright Future School</h1>
+  <p>Welcome to the Student Enrollment System</p>
+
+  <!-- NAME -->
+  <h2>Student Name: Maryam Moostamandy</h2>
+
+  <!-- ENROLL FORM -->
+  <h2>Enroll Student</h2>
+
+  <input type="text" id="name" placeholder="Student Name">
+  <input type="number" id="age" placeholder="Age">
+  <input type="text" id="grade" placeholder="Grade Level">
+
+  <button onclick="enrollStudent()">Enroll Student</button>
+
+  <p id="message"></p>
+
+  <div id="summary"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
